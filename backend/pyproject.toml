@@ -1,0 +1,14 @@
+[tool.pytest.ini_options]
+pythonpath = [
+  ".",  # To find 'app' module from 'backend' directory
+]
+testpaths = ["app"]
+addopts = "--cov=app --cov-report=xml --cov-report=html --cov-report=term -sv"
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["app/tests/*", "app/*/__init__.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
