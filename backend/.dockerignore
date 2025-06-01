@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+.venv
+.git
+.gitignore
+*.db
+*.sqlite3
+# IDE/editor directories
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
